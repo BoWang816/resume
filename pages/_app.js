@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+/**
+ * _app.js
+ * @author wangbo
+ * @since 2021/1/14
+ */
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }) {
+    return <Component {...pageProps} />
 }
-
-export default MyApp
