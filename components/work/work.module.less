@@ -1,0 +1,90 @@
+/**
+ * work.module.less
+ * @author wangbo
+ * @since 2021/1/14
+ */
+.experiencesSection {
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+    padding: 45px;
+    background: #fff;
+    margin-bottom: 45px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    .title {
+        margin-top: 0;
+        margin-bottom: 45px;
+        font-size: 24px;
+        text-align: center;
+    }
+    .timeLine {
+        border-left: 3px solid #00BCD4;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+        position: relative;
+        padding: 0 30px;
+        margin-left: 280px;
+        .item {
+            position: relative;
+            margin-bottom: 45px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: -43px;
+                top: 0;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background-clip: padding-box;
+                background: #fff;
+                border: 3px solid #00BCD4;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                left: -36px;
+                top: 7px;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-clip: padding-box;
+                background: #00BCD4;
+                z-index: 10;
+            }
+            > div {
+                position: relative;
+            }
+            .workPlace {
+                .place {
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                .location {
+                    position: absolute;
+                    right: 0;
+                    top: 2px;
+                    color: #8a8a8a;
+                }
+            }
+            .jobMeta {
+                position: absolute;
+                left: -280px;
+                top: 0;
+                .metaTitle {
+                    font-size: 18px;
+                    color: #00BCD4;
+                }
+                .metaTime {
+                    color: #8a8a8a;
+                }
+            }
+            .jobDesc {
+                color: #666;
+                font-size: 14px;
+            }
+        }
+    }
+}
