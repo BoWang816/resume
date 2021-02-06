@@ -4,7 +4,7 @@
  * @since 2021/1/14
  */
 import Head from 'next/head';
-import styles from './layout.module.less';
+import styles from './index.module.less';
 
 export default function Layout({children}) {
     return (

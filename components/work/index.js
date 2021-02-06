@@ -3,11 +3,11 @@
  * @author wangbo
  * @since 2021/1/14
  */
-import styles from './work.module.less';
+import styles from './index.module.less';
 
 export default function Work() {
     return (
-        <section className={styles.experiencesSection}>
+        <section className={styles.experiencesSection} id="experiences">
             <h2 className={styles.title}>工作经历</h2>
             <div className={styles.timeLine}>
                 <div className={styles.item}>

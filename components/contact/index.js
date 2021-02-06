@@ -5,7 +5,7 @@
  */
 import styles from './index.module.less';
 
-export default function Evaluate() {
+export default function Contact() {
     return (
         <div className={styles}>
             个人评价组件

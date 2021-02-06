@@ -4,6 +4,8 @@ import Evaluate from "../components/evaluate";
 import Project from "../components/project";
 import Skill from "../components/skill";
 import Work from "../components/work";
+import Education from "../components/education";
+import Contact from "../components/contact";
 import styles from './app.module.less';
 
 export default function Home() {
@@ -12,9 +14,11 @@ export default function Home() {
           <Info/>
           <section className={styles.mainWrap}>
               <Work/>
+              <Education/>
               <Project/>
               <Skill/>
               <Evaluate/>
+              <Contact/>
           </section>
       </Layout>
   )

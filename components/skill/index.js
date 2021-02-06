@@ -3,9 +3,9 @@
  * @author wangbo
  * @since 2021/1/14
  */
-import styles from './skill.module.less';
+import styles from './index.module.less';
 
-export default function Info() {
+export default function Skill() {
     return (
         <div className={styles}>
             个人技能组件
