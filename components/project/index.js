@@ -7,8 +7,76 @@ import styles from './index.module.less';
 
 export default function Project() {
     return (
-        <div className={styles}>
-            项目经历组件
+        <div className={styles.projectSection} id="project">
+            <h2 className={styles.title}>项目经历</h2>
+            <ul className={styles.projectFilter}>
+                <li className={styles.active} data-filter="*">All</li>
+                <li className="type" data-filter=".backend">Back-end</li>
+                <li className="type" data-filter=".frontend">Front-end</li>
+            </ul>
+
+            <div className={styles.projectWrap}>
+                <div className={styles.projectItem}>
+                    <a href="#">
+                        <div className={styles.itemInner}>
+                            <div className={styles.content}>
+                                <h3 className={styles.subTitle}>
+                                    Project Lorem Ipsum
+                                </h3>
+                                <div className={styles.meta}>AngularJS</div>
+                                <div className={styles.projectDesc}>
+                                    这里会是项目项目的描述
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div className={styles.projectItem}>
+                    <a href="#">
+                        <div className={styles.itemInner}>
+                            <div className={styles.content}>
+                                <h3 className={styles.subTitle}>
+                                    Project Lorem Ipsum
+                                </h3>
+                                <div className={styles.meta}>AngularJS</div>
+                                <div className={styles.projectDesc}>
+                                    这里会是项目项目的描述
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div className={styles.projectItem}>
+                    <a href="#">
+                        <div className={styles.itemInner}>
+                            <div className={styles.content}>
+                                <h3 className={styles.subTitle}>
+                                    Project Lorem Ipsum
+                                </h3>
+                                <div className={styles.meta}>AngularJS</div>
+                                <div className={styles.projectDesc}>
+                                    这里会是项目项目的描述
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div className={styles.projectItem}>
+                    <a href="#">
+                        <div className={styles.itemInner}>
+                            <div className={styles.content}>
+                                <h3 className={styles.subTitle}>
+                                    Project Lorem Ipsum
+                                </h3>
+                                <div className={styles.meta}>AngularJS</div>
+                                <div className={styles.projectDesc}>
+                                    这里会是项目项目的描述
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     )
 }

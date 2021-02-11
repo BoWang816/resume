@@ -3,4 +3,51 @@
  * @author wangbo
  * @since 2021/1/14
  */
+.skillSection {
+    box-shadow: 0 1px 4px 0 rgba(0 0 0 / 14%);
+    padding: 45px;
+    background: #fff;
+    margin-bottom: 45px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    text-align: center;
 
+    .title {
+        margin-top: 0;
+        margin-bottom: 45px;
+        font-size: 24px;
+    }
+
+    .webSkill {
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;
+        padding: 10px 15px;
+    }
+
+    .skillItem {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        width: 33%;
+    }
+    .skillTitle {
+        padding: 10px 0 5px;
+        line-height: 20px;
+        overflow: hidden;
+        font-weight: 300;
+        min-height: 30px;
+        text-align: left;
+    }
+
+    .skillDesc {
+        margin-top: 8px;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 300;
+        list-style: square inside !important;
+        > li {
+            margin: 10px 0;
+        }
+    }
+}

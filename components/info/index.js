@@ -39,10 +39,9 @@ export default function Info() {
                 <ul id="page-nav" className="nav page-nav list-inline">
                     <li className=""><a className="scrollto" href="#experiences">工作经历</a></li>
                     <li className=""><a className="scrollto" href="#education">教育经历</a></li>
-                    <li className=""><a className="scrollto" href="#skills-section">个人项目</a></li>
-                    <li className=""><a className="scrollto" href="#testimonials-section">个人技能</a></li>
-                    <li className=""><a className="scrollto" href="#portfolio-section">个人评价</a></li>
-                    <li className=""><a className="scrollto" href="#contact-section">联系我</a></li>
+                    <li className=""><a className="scrollto" href="#project">个人项目</a></li>
+                    <li className=""><a className="scrollto" href="#skill">个人技能</a></li>
+                    <li className=""><a className="scrollto" href="#evaluate">个人评价</a></li>
                 </ul>
             </div>
         </div>

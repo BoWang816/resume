@@ -5,7 +5,6 @@ import Project from "../components/project";
 import Skill from "../components/skill";
 import Work from "../components/work";
 import Education from "../components/education";
-import Contact from "../components/contact";
 import styles from './app.module.less';
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
               <Project/>
               <Skill/>
               <Evaluate/>
-              <Contact/>
           </section>
       </Layout>
   )

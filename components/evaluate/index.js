@@ -7,8 +7,9 @@ import styles from './index.module.less';
 
 export default function Evaluate() {
     return (
-        <div className={styles}>
-            个人评价组件
+        <div className={styles.evaluateSection} id="evaluate">
+            <h2 className={styles.title}>自我评价</h2>
+
         </div>
     )
 }
