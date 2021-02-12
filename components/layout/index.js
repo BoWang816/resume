@@ -14,7 +14,7 @@ export default function Layout({children}) {
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="description" content="https://resume.wangboweb.site"/>
             </Head>
-            <div className={styles.topBar}>
+            <div className={styles.topBar} id="top">
                 <a className={styles.downloadBtn} href="#"><i className="fa fa-download" aria-hidden="true"></i> Download My Resume</a>
             </div>
             <main>{children}</main>

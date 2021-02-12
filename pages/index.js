@@ -18,6 +18,9 @@ export default function Home() {
               <Skill/>
               <Evaluate/>
           </section>
+          <a href="#top" className={styles.top}>
+              ^
+          </a>
       </Layout>
   )
 }
