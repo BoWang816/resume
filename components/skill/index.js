@@ -4,11 +4,13 @@
  * @since 2021/1/14
  */
 import styles from './index.module.less';
+import CommonModule from "../module";
 
 export default function Skill() {
+    const title = '职业技能';
+    const id = 'skill';
     return (
-        <div className={styles.skillSection} id="skill">
-            <h2 className={styles.title}>职业技能</h2>
+        <CommonModule id={id} title={title}>
             <div className={styles.webSkill}>
                 <div className={styles.skillItem}>
                     <header className={styles.skillTitle}>web</header>
@@ -51,6 +53,6 @@ export default function Skill() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </CommonModule>
     )
 }

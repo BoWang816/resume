@@ -5,6 +5,7 @@
  */
 import Head from 'next/head';
 import styles from './index.module.less';
+import Nav from "../nav";
 
 export default function Layout({children}) {
     return (
@@ -14,10 +15,17 @@ export default function Layout({children}) {
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="description" content="https://resume.wangboweb.site"/>
             </Head>
-            <div className={styles.topBar} id="top">
-                <a className={styles.downloadBtn} href="#"><i className="fa fa-download" aria-hidden="true"></i> Download My Resume</a>
-            </div>
-            <main>{children}</main>
+
+            <main className={styles.mainWrap} id="info">
+                <Nav/>
+                {children}
+            </main>
+
+            <footer className={styles.footer}>
+                恪晨的博客，托管于Vercel
+                <br/>
+                ©CopyRight {new Date().getFullYear()} - {new Date().getFullYear() + 1} By Bo.Wang
+            </footer>
         </div>
     );
 }

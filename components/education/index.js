@@ -4,11 +4,13 @@
  * @since 2021/1/14
  */
 import styles from './index.module.less';
+import CommonModule from "../module";
 
 export default function Education() {
+    const title = '教育经历';
+    const id = 'education';
     return (
-        <div className={styles.educationArea} id="education">
-            <h2 className={styles.title}>教育经历</h2>
+        <CommonModule id={id} title={title}>
             <ul className={styles.list}>
                 <li className={styles.item}>
                     <div className={styles.itemTitle}>
@@ -29,6 +31,6 @@ export default function Education() {
                     </div>
                 </li>
             </ul>
-        </div>
+        </CommonModule>
     )
 }

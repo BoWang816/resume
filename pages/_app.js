@@ -4,6 +4,7 @@
  * @since 2021/1/14
  */
 import '../styles/globals.less';
+import '../styles/iconfont.css';
 
 export default function App({ Component, pageProps }) {
     return <Component {...pageProps} />

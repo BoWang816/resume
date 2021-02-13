@@ -1,0 +1,37 @@
+/**
+ * style.module.less
+ * @author wangbo
+ * @since 2021/2/13
+ */
+.commonSection {
+    box-shadow: 0 1px 4px 0 rgba(0 0 0 / 14%);
+    padding: 45px;
+    background: #fff;
+    margin-bottom: 45px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .title {
+        margin-top: 0;
+        margin-bottom: 35px;
+        font-size: 24px;
+        &:before {
+            content: '';
+            display: inline;
+            border-left: 3px solid #00B38A;
+            height: 16px;
+            width: 3px;
+            padding-right: 10px;
+        }
+    }
+    .cardContent {
+        background: #FFFFFF;
+        border-radius: 2px;
+        padding: 20px 10px 10px;
+        &:hover {
+            box-shadow: 0 0 8px 0 rgb(0 0 0 / 10%);
+        }
+    }
+}

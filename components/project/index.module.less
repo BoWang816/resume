@@ -3,83 +3,70 @@
  * @author wangbo
  * @since 2021/1/14
  */
-.projectSection {
-    box-shadow: 0 1px 4px 0 rgba(0 0 0 / 14%);
-    padding: 45px;
-    background: #fff;
-    margin-bottom: 45px;
-    border-radius: 2px;
-    background-clip: padding-box;
+.projectFilter {
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 60px;
     text-align: center;
-
-    .title {
-        margin-top: 0;
-        margin-bottom: 45px;
-        font-size: 24px;
-    }
-    .projectFilter {
+    border-bottom: 1px solid #e8e8e8;
+    > li {
+        margin-right: 30px;
         list-style: none;
-        margin: 0 auto;
-        margin-bottom: 60px;
-        text-align: center;
-        border-bottom: 1px solid #e8e8e8;
-        > li {
-            margin-right: 30px;
-            list-style: none;
-            display: inline-block;
-            padding: 8px 15px;
-            color: #8a8a8a;
-            cursor: pointer;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-        .active {
-            color: #00BCD4;
-            border-bottom: 2px solid #00BCD4;
-        }
+        display: inline-block;
+        padding: 8px 15px;
+        color: #8a8a8a;
+        cursor: pointer;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 500;
     }
-    .projectWrap {
-        margin-right: -15px;
-        margin-left: -15px;
-        .projectItem {
-            display: inline-block;
-            margin-right: 4%;
-            width: 20%;
-            margin-bottom: 30px;
-        }
-        .itemInner {
-            background: #00BCD4;
-            color: #fff;
-            background-clip: padding-box;
-            border-radius: 6px;
-            opacity: 0.9;
-            box-shadow: 4px 4px 4px 0 rgb(0 0 0 / 14%);
-            &:hover {
-                opacity: 1;
-                box-shadow: 8px 8px 10px 0 rgb(0 0 0 / 14%);
-                > .content > .subTitle {
-                    font-size: 16px;
-                }
+    .active {
+        color: #00BCD4;
+        border-bottom: 2px solid #00BCD4;
+    }
+}
+.projectWrap {
+    display: grid;
+    margin: 0 10px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap: 4%;
+
+    .projectItem {
+        margin-right: 4%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .itemInner {
+        background: #00BCD4;
+        color: #fff;
+        background-clip: padding-box;
+        border-radius: 6px;
+        opacity: 0.9;
+        box-shadow: 4px 4px 4px 0 rgb(0 0 0 / 14%);
+        &:hover {
+            opacity: 1;
+            box-shadow: 8px 8px 10px 0 rgb(0 0 0 / 14%);
+            > .content > .subTitle {
+                font-size: 16px;
             }
-            .content {
-                padding: 30px;
-                position: relative;
-                text-align: left;
-                color: #FFFFFF;
-                .subTitle {
-                    font-size: 16px;
-                    margin-top: 0;
-                    margin-bottom: 5px;
-                }
-                .meta {
-                    color: rgba(255, 255, 255, 0.8);
-                    font-size: 14px;
-                    margin-bottom: 20px;
-                }
-                .projectDesc {
-                    font-size: 12px;
-                }
+        }
+        .content {
+            padding: 30px;
+            position: relative;
+            text-align: left;
+            color: #FFFFFF;
+            .subTitle {
+                font-size: 16px;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            .meta {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            .projectDesc {
+                font-size: 12px;
             }
         }
     }

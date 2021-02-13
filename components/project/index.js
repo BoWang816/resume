@@ -4,11 +4,13 @@
  * @since 2021/1/14
  */
 import styles from './index.module.less';
+import CommonModule from "../module";
 
 export default function Project() {
+    const title = '项目经历';
+    const id = 'project';
     return (
-        <div className={styles.projectSection} id="project">
-            <h2 className={styles.title}>项目经历</h2>
+        <CommonModule id={id} title={title}>
             <ul className={styles.projectFilter}>
                 <li className={styles.active} data-filter="*">All</li>
                 <li className="type" data-filter=".backend">Back-end</li>
@@ -77,6 +79,6 @@ export default function Project() {
                     </a>
                 </div>
             </div>
-        </div>
+        </CommonModule>
     )
 }
